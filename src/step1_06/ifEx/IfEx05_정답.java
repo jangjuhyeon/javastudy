@@ -19,20 +19,22 @@ public class IfEx05_정답 {
 		int dbPw = 0;
 		
 		Scanner scan = new Scanner(System.in);
+		System.out.println("=== 회원가입 ===");
 		System.out.println("회원가입. Id입력 : ");
-		int sid = scan.nextInt();
+		dbId = scan.nextInt();
 		System.out.println("회원가입. Pw입력 :  ");
-		int spw = scan.nextInt();
+		dbPw = scan.nextInt();
 		System.out.println("회원가입을 축하합니다. ");
+		System.out.println("=== 로그인 ===");
 		System.out.println("로그인을 위해 id와 비밀번호를 입력해주세요");
 		int id  = scan.nextInt();
 		int pw  = scan.nextInt();
 		
-		if(sid == id && spw == pw) {
+		if(dbId == id && dbPw == pw) {
 			System.out.println("로그인 성공");
 		}
 		
-		if(sid != id || spw != pw) {
+		if(dbId != id || dbPw != pw) {
 			System.out.println("로그인 실패");
 			
 		}
