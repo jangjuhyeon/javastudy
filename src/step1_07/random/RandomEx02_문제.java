@@ -17,6 +17,7 @@ public class RandomEx02_문제 {
 		Random ran = new Random();
 		
 		int coin = ran.nextInt(2);
+		
 	}
 
 }
