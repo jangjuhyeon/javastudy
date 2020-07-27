@@ -18,6 +18,7 @@ public class RandomEx02_문제 {
 		
 		int coin = ran.nextInt(2);
 		
+		
 	}
 
 }
