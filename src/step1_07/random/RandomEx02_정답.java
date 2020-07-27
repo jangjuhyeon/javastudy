@@ -16,7 +16,7 @@ public class RandomEx02_정답 {
 		// TODO Auto-generated method stub
 		
 		Random ran = new Random();
-		Scanner scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in );
 		
 		// 예) 0 ~ 2 사이의 랜덤 int rNum = ran.nextInt(3);
 		int coin = ran.nextInt(2); //0.1
