@@ -25,7 +25,7 @@ public class RandomEx02_정답 {
 			System.out.println("동전의 앞면입니다.");
 		}
 		if(coin == 1) {
-			System.out.println("동전의 뒷면입니다.");
+			System.out.println("동전의 뒷면입니다. ");
 		}
 		
 		
