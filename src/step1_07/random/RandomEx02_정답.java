@@ -28,6 +28,7 @@ public class RandomEx02_정답 {
 			System.out.println("동전의 뒷면입니다. ");
 		}
 		
+		//나는 테스트중입니다.
 		
 	}
 
