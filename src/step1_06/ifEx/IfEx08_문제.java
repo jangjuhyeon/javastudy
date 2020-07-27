@@ -1,7 +1,5 @@
 package step1_06.ifEx;
 
-import java.util.Scanner;
-
 /*
  * # 놀이기구 이용제한
  * 1. 키를 입력받는다.
@@ -11,33 +9,11 @@ import java.util.Scanner;
  *    예) 부모님과 함께 오셨나요?(yes:1, no:0)
  */
 
-
 public class IfEx08_문제 {
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("키를 입력해주세요");
-		int height = scan.nextInt();
-		
-		if(height >= 120) {
-			System.out.println("놀이기구를 이용할 수 있습니다.");
-		}
-		if(height < 120) {
-			System.out.println("부모님과 함께 오셨나요?(yes:1, no:0) : ");
-			int answer = scan.nextInt();
-			
-			if(answer == 1) {
-				System.out.println("놀이기구를 이용할 수 있습니다.");
-			}
-			if(answer == 0) {
-				System.out.println("놀이기구를 이용할 수 없습니다.");
-				
-			}
-		
-			
 
-		}
 	}
+
 }
