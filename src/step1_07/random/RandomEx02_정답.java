@@ -22,13 +22,23 @@ public class RandomEx02_정답 {
 		int coin = ran.nextInt(2); //0.1
 		
 		if(coin == 0) {
-			System.out.println("동전의 앞면입니다.");
+			System.out.println("치트키 = 앞면");
 		}
 		if(coin == 1) {
-			System.out.println("동전의 뒷면입니다. ");
+			System.out.println("치트키 = 뒷면");
 		}
 		
-		//나는 테스트중입니다.
+		System.out.println("동전의 앞면(=0), 동전의 뒷면(=1) 숫자를 입력해주세요");
+		int num = scan.nextInt();
+		if(coin == num) {
+			System.out.println("정답!");
+			
+		}
+		if(coin != num) {
+			System.out.println("땡!");
+			
+		}
+	
 		
 	}
 
