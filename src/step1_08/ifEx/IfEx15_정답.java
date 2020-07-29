@@ -17,39 +17,43 @@ public class IfEx15_정답 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Scanner scan = new Scanner(System.in);
 		
 		int myAcc = 1234;
 		int myMoney = 8700;
-		
+			
 		int yourAcc = 4321;
 		int yourMoney = 12000;
-		
-		System.out.println("myMoney =" + myMoney + "원" );
-		System.out.println("yourMoney = " + yourMoney + "원");
-		
+			
+		//System.out.println("myMoney = " + myMoney + "원");
+		//System.out.println("yourMoney = " + yourMoney + "원");
+			
 		System.out.println("이체할 계좌번호를 입력해주세요");
-		int account = scan.nextInt();
+		int transAcc = scan.nextInt();
 		
-		if(account == yourAcc) {
-			System.out.println("이체 할 금액을 입력해주세요");
-			int emoney = scan.nextInt();
-			1
-			if(myMoney>= emoney) {
-				int jango = myMoney-emoney;
-				System.out.println("현재 나의 통장에는 " + myMoney +
-						"원 이있고, " + emoney + "원 을 이체 한 후 나의 통장에는 " + 
-						jango + "가 남습니다.");
+		if(yourAcc == transAcc) {
+			System.out.println("이체할 금액을 입력해주세요");
+			int transMoney = scan.nextInt();
+			
+			if(transMoney <= myMoney) {
+				myMoney = myMoney - transMoney;
+				yourMoney = yourMoney + transMoney;
+				System.out.println(transMoney + "원 이체 후 나의 계좌에는"+ myMoney + 
+						"가 남습니다. 이체를 완료하였습니다."  );
+			} else if(transMoney > myMoney){
+				System.out.println("이체 불가");
 				
-			if(myMoney < emoney) {
-				System.out.println("이체불가");
+			} else {
+				System.out.println("계좌번호를 확인해주세요");
 			}
-				
-			}
+			System.out.println("이체 후 통장잔고 : " + myMoney );
+			System.out.println("이체 받은 후 통장잔고 : " + yourMoney);
 		}
 		
-
+		System.out.println("이체 후 통장잔고 : " + myMoney );
+		System.out.println("이체 받은 후 통장잔고 : " + yourMoney);
+	
 	}
 
 }

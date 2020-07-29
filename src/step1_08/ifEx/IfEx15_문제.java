@@ -16,16 +16,6 @@ public class IfEx15_문제 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int myAcc = 1234;
-		int myMoney = 8700;
-		
-		int yourAcc = 4321;
-		int yourMoney = 12000;
-		
-		System.out.println("myMoney = " + myMoney + "원");
-		System.out.println("yourMoney = " + yourMoney + "원");
-
-
 	}
 
 }
