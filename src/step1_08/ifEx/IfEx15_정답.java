@@ -35,7 +35,7 @@ public class IfEx15_정답 {
 		if(account == yourAcc) {
 			System.out.println("이체 할 금액을 입력해주세요");
 			int emoney = scan.nextInt();
-			1
+			
 			if(myMoney>= emoney) {
 				int jango = myMoney-emoney;
 				System.out.println("현재 나의 통장에는 " + myMoney +
