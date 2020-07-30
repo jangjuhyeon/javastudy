@@ -14,10 +14,8 @@ import java.util.Scanner;
  */
 
 public class IfEx15_정답 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		Scanner scan = new Scanner(System.in);
 		
 		int myAcc = 1234;
@@ -26,30 +24,28 @@ public class IfEx15_정답 {
 		int yourAcc = 4321;
 		int yourMoney = 12000;
 		
-		System.out.println("myMoney =" + myMoney + "원" );
-		System.out.println("yourMoney = " + yourMoney + "원");
+		System.out.print("이체할 계좌번호를 입력하세요 : ");
+		int transAcc = scan.nextInt();
 		
-		System.out.println("이체할 계좌번호를 입력해주세요");
-		int account = scan.nextInt();
-		
-		if(account == yourAcc) {
-			System.out.println("이체 할 금액을 입력해주세요");
-			int emoney = scan.nextInt();
+		if(transAcc == yourAcc) {
 			
-			if(myMoney>= emoney) {
-				int jango = myMoney-emoney;
-				System.out.println("현재 나의 통장에는 " + myMoney +
-						"원 이있고, " + emoney + "원 을 이체 한 후 나의 통장에는 " + 
-						jango + "가 남습니다.");
-				
-			if(myMoney < emoney) {
-				System.out.println("이체불가");
+			System.out.print("이체금액을 입력하세요 : ");
+			int transMoney = scan.nextInt();
+			
+			if(transMoney <= myMoney) {
+				myMoney = myMoney - transMoney;
+				yourMoney = yourMoney + transMoney;
+				System.out.println("이체를 완료하였습니다.");
+			}else {
+				System.out.println("계좌잔액이 부족합니다.");
 			}
-				
-			}
+			
+		}else {
+			System.out.println("계좌번호를 확인해주세요.");
 		}
 		
-
+		System.out.println("myMoney = " + myMoney + "원");
+		System.out.println("yourMoney = " + yourMoney + "원");
+		
 	}
-
 }
