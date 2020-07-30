@@ -34,6 +34,7 @@ public class WhileEx05_정답 {
 		System.out.println("1.불고기 버거 : " + price1 + "원");
 		System.out.println("2.새우 버기 : " + price2 + "원");
 		System.out.println("3.콜라 : " + price3 + "원");
+		 
 	}
 
 }
