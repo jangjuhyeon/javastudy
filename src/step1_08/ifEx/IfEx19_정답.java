@@ -25,24 +25,30 @@ public class IfEx19_정답 {
 		int rNum1 = ran.nextInt(10) + 1;
 		int rNum2 = ran.nextInt(10) + 1;
 		
-		//연산자
-		
 		int answer = ran.nextInt(4) + 1;
+		System.out.println(rNum1);
+		
+		int operator = 0;
+		
 		if(answer == 1) {
-			answer = rNum1 + rNum2;
+			operator = rNum1 + rNum2;
+			
 		}else if(answer == 2) {
-			answer = rNum1 - rNum2;
+			operator = rNum1 - rNum2;
+			
 		}else if(answer == 3) {
-			answer = rNum1 * rNum2;
-		}else {
-			answer = rNum1 / rNum2;
+			operator = rNum1 * rNum2;
+			
+		} else {
+			operator = rNum1 / rNum2;
+			
 		}
-		System.out.println(rNum1 + "?" + rNum2 + " = " + answer );
+		System.out.println("문제는? " + rNum1 + "?" + rNum2 + " = " + operator );
 		
 		
 		System.out.println("연산자 기호 1)덧셈 2)뺄셈 3)곱셈 4)나머지");
 		System.out.println("==============================");
-		System.out.println(rNum1 + "?" + rNum2 + " = " + answer );
+		System.out.println(rNum1 + "?" + rNum2 + " = " + operator );
 		System.out.println("? 안에 들어갈 연산자 기호를 선택해주세요 : ");
 		int mychoice = scan.nextInt();
 		
