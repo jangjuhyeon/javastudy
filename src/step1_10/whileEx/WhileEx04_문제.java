@@ -13,30 +13,7 @@ import java.util.Scanner;
 public class WhileEx04_문제 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
-		Random ran = new Random();
 		
-		int score = 0;
-		int cnt = 0;
-		
-		int i = 1;
-		while(i <= 5) {
-			
-			int x = ran.nextInt(8) + 2;
-			int y = ran.nextInt(9) + 1;
-			int answer = x * y;
-			
-			System.out.println(x + " X " + y + " = " );
-			int myAnswer = scan.nextInt();
-			
-			if(answer == myAnswer) {
-				cnt = cnt + 1; 
-			}
-			i = i + 1;
-					}
-	score = cnt * 20;
-	System.out.println("성적 = " + score + " 점 ");
 	}
 	
 }
