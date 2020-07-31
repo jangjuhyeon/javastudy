@@ -31,7 +31,7 @@ public class WhileEx04_문제 {
 			int myAnswer = scan.nextInt();
 			
 			if(answer == myAnswer) {
-				cnt = cnt + 1;
+				cnt = cnt + 1; 
 			}
 			i = i + 1;
 					}

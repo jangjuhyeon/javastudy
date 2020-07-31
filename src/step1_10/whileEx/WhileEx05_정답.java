@@ -19,7 +19,7 @@ package step1_10.whileEx;
  * 2. 새우    버거 : 2개
  * 3. 콜         라 : 1개
  * 4. 총   금   액 : 31300원
- * 5. 잔         돈 : 700원
+ * 5. 잔         돈 : 700원 
  */
 
 public class WhileEx05_정답 {

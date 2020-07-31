@@ -20,7 +20,7 @@ public class WhileEx04_정답 {
 		int score = 0;
 		int cnt = 0;
 		
-		int i = 1;
+		int i = 1; 
 		while(i <= 5) {
 			int x = ran.nextInt(8) + 2;
 			int y = ran.nextInt(9) + 1;

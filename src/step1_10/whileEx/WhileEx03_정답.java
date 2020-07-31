@@ -58,7 +58,7 @@ public class WhileEx03_정답 {
 		 //
 		
 		// 문제4) 문제2의 조건에 맞는 수들의 개수 출력
-		// 정답4) 6
+		// 정답4) 6 
 		 i = 1;
 		 int count = 0;
 		 while(i <= 10) {
