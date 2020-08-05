@@ -30,7 +30,7 @@ public class WhileEx18_문제 {
 		int y = 0;
 		
 		// 방향(direction)
-		int dir = 0;
+		int dir = 0 ;
 		
 		// 속도
 		int speed = 0;
