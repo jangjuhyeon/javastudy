@@ -35,6 +35,7 @@ public class WhileEx10_문제 {
 		int dbPw2 = 2345;
 		int dbMoney = 70000;
 		
+		
 		int log = -1;
 		//-1(로그아웃), 1(dbAcc1로그인), 2(dbAcc로그인)
 		
