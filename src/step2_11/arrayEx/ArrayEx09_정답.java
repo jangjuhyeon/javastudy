@@ -57,7 +57,7 @@ Scanner scan = new Scanner(System.in);
 			
 			if(sel == 1) {
 				System.out.print("좌석번호 선택[1~7] : ");
-				int idx = scan.nextInt();
+				int idx = scan.nextInt(); 
 				idx -= 1;
 				
 				if(seat[idx] == 0) {
