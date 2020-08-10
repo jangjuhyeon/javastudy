@@ -22,7 +22,7 @@ import java.util.Scanner;
  * seat = 0 1 0 1 0 0 0
  * 이미 예매가 완료된 자리입니다.
  * ----------------------
- * 매출액 : 24000원
+ * 매출액 : 24000원 
  */
 
 public class ArrayEx09_정답 {

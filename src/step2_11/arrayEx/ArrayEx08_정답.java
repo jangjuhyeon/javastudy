@@ -11,7 +11,7 @@ import java.util.Random;
  * 예)
  * answer = {1, 3, 4, 2, 5}
  * hgd    = {1, 1, 4, 4, 3}
- * 정오표     = {O, X, O, X, X}
+ * 정오표     = {O, X, O, X, X} 
  * 성적        = 40점
  */
 

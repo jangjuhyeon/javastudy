@@ -16,7 +16,7 @@ import java.util.Scanner;
  * seat = 0 1 0 0 0 0 0
  * 
  * 좌석선택 : 3
- * seat = 0 1 0 1 0 0 0
+ * seat = 0 1 0 1 0 0 0 
  * 
  * 좌석선택 : 3
  * seat = 0 1 0 1 0 0 0

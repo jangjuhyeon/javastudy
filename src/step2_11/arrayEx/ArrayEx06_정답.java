@@ -27,7 +27,7 @@ public class ArrayEx06_정답 {
 		
 		int check = -1;
 		for(int i = 0; i<5; i++) {
-			if(hakbuns[i]==hakbun) {
+			if(hakbuns[i]==hakbun) { 
 				check = i;
 			}
 		}
