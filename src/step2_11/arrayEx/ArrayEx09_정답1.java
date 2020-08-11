@@ -25,7 +25,7 @@ import java.util.Scanner;
  * 매출액 : 24000원
  */
 
-public class ArrayEx09_정답 {
+public class ArrayEx09_정답1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -42,9 +42,7 @@ public class ArrayEx09_정답 {
 				}else {
 					System.out.println("[O]");
 				}
-			}
-			
-			
+				
 			System.out.println("=메가 영화관=");
 			System.out.println("1.좌석예매");
 			System.out.println("2.종료");
@@ -52,31 +50,21 @@ public class ArrayEx09_정답 {
 			System.out.print("메뉴 선택 : ");
 			int sel = scan.nextInt();
 			
-			int check = 0;//빈자리
 			if(sel == 1) {
-				System.out.println("좌석을 선택[0-6] : ");
-				int myChoice = scan.nextInt();
-				if(seat[1] == 0) {
-					if(myChoice == 1) {
-						System.out.println("1번자리 선택");
-						seat[1] = 1;
-					}else if(seat[0]==0) {
-						if(myChoice==2) {
-							System.out.println("0번자리 선택");
-							seat[0] = 1;
-						}else if(seat[2]==0) {
-							System.out.println("2번자리 선택");
-							seat[2]= 1;
-						}
-					}
-				}
+				System.out.println("좌석선택[0-6] : ");
+				int mySeat = scan.nextInt();
+				if(seat[mySeat] == 0 ) {
+					System.out.println(mySeat + "번 좌석예약이 완료되었습니다");
+					seat[mySeat] = 1;
 				
+				}
+				System.out.println();
 			}
 			else if(sel == 2) {
 				run = false;
+				}
 			}
+
 		}
-
 	}
-
 }

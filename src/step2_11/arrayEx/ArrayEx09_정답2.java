@@ -25,7 +25,7 @@ import java.util.Scanner;
  * 매출액 : 24000원
  */
 
-public class ArrayEx09_정답 {
+public class ArrayEx09_정답2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,50 +33,52 @@ public class ArrayEx09_정답 {
 		Scanner scan = new Scanner(System.in);
 		
 		int[] seat = new int[7];
-		
+		int price = 0;
 		boolean run = true;
 		while(run) {
 			for(int i =0; i<7; i++) {
 				if(seat[i]==0) {
-					System.out.println("[ ]");
+					System.out.print("[ ]");
 				}else {
-					System.out.println("[O]");
-				}
-			}
-			
-			
-			System.out.println("=메가 영화관=");
-			System.out.println("1.좌석예매");
-			System.out.println("2.종료");
-			
-			System.out.print("메뉴 선택 : ");
-			int sel = scan.nextInt();
-			
-			int check = 0;//빈자리
-			if(sel == 1) {
-				System.out.println("좌석을 선택[0-6] : ");
-				int myChoice = scan.nextInt();
-				if(seat[1] == 0) {
-					if(myChoice == 1) {
-						System.out.println("1번자리 선택");
-						seat[1] = 1;
-					}else if(seat[0]==0) {
-						if(myChoice==2) {
-							System.out.println("0번자리 선택");
-							seat[0] = 1;
-						}else if(seat[2]==0) {
-							System.out.println("2번자리 선택");
-							seat[2]= 1;
-						}
-					}
+					System.out.print("[O]");
 				}
 				
 			}
+			System.out.println();
+			System.out.println("=메가 영화관=");
+			System.out.println("1.좌석예매");
+			System.out.println("2.종료");
+		 
+			System.out.print("메뉴 선택 : ");
+			int sel = scan.nextInt();
+			
+			if(sel == 1) {
+				System.out.println("좌석 선택[0-6] : ");
+				int mySeat = scan.nextInt();
+				
+				if(seat[mySeat] == 0) {
+					System.out.println(mySeat + "번 좌석 예약 완료");
+					seat[mySeat]=1;
+				}else{
+					System.out.println("이미 예매가 완료된 자리입니다.");
+				}
+			}
 			else if(sel == 2) {
+				for(int i = 0; i<7; i++) {
+					if(seat[i]==1) {
+						price = price + 1;
+					}
 				run = false;
 			}
+			
+			
+				
+			}
+			System.out.println("매출액 " + price * 12000 +"원");
+			
 		}
-
+		
 	}
+	
 
 }
