@@ -21,8 +21,11 @@ public class Ex02 {
 					System.out.println("나의 점수는 " + arr[i+1]);
 				}
 			}
-			*/	
+			*/
 			int score[] = {1001, 20,43 , 1002 , 54,2 , 1003,76,6};
+			
+			//12 45 78
+			//
 			
 			// 학번과 국어 수학 점수이다 
 			// 예) 1001 == (20 , 43)
@@ -34,11 +37,14 @@ public class Ex02 {
 			// 예)  82 ==> 1003
 			System.out.println("국어+수학 점수 입력 : ");
 			int totJumsu = scan.nextInt();
+			
 			for(int i = 0; i<9; i++) {
-				if(totJumsu == arr[i+i+1]) {
-					System.out.println("나의 점수는" + arr[i-1]);
+				if(totJumsu == (score[i] + score[i+1])) {
+					
+					System.out.println("나의 학번은" + score[i-1] + "입니다" );
 				}
 			}
+			
 
 
 		}
