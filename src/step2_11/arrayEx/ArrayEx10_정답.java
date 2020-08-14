@@ -20,7 +20,7 @@ public class ArrayEx10_정답 {
 		
 		boolean run = true;
 		while(run) {			
-			System.out.println("1) 복권 결과확인");						
+			System.out.println("1) 복권 결과확인 ");						
 			System.out.print("메뉴 선택 : ");
 			int sel = scan.nextInt();
 			
