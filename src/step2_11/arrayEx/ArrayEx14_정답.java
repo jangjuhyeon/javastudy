@@ -42,7 +42,7 @@ public class ArrayEx14_정답 {
 				if(player - 1 >= 0) {
 					game[player - 1] = 2; 
 					game[player] = 0;
-					player -=1;
+					player -=1; 
 				}
 			}
 			else if(move ==2) {

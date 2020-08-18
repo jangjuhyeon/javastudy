@@ -17,7 +17,7 @@ public class ArrayEx14_문제 {
 		int player = 0;
 		for (int i = 0; i < 7; i++) {
 			if (game[i] == 2) {
-				player = i; //ㅔㅣ
+				player = i; 
 			}
 		}
 
