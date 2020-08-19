@@ -21,6 +21,10 @@ public class ArrayEx16_문제 {
 		
 		int[] arr = new int[4];
 		int[] check = new int[4];
+		System.out.println(100%40);
+		System.out.println(1%3);
+		System.out.println(2%3);
+		System.out.println(3%3);
 	}
 
 }

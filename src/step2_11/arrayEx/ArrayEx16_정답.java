@@ -27,6 +27,49 @@ public class ArrayEx16_정답 {
 		int[] arr = new int[4];
 		int[] check = new int[4];
 		
+
+		int i = 0;
+		while(i < 4) {
+			int r = ran.nextInt(4);
+			//r = 2
+			//   r=0이면 {x,x,0,x}
+			//-> r=0이면 {x,x,1,x}
+			System.out.println(r);
+			
+			if(check[r] == 0) {
+				check[r] = 1;
+				arr[i] = r + 1;
+				// i = 0 
+				// {3, x, x, x}
+				i += 1;
+				//cnt = 몇번하고 중단시킬때
+				int cnt = 1;
+				
+				int j = 0;
+				while(j<4) {
+					for(int k = 0; k<4; k++) {
+						System.out.println(arr[k] + " ");
+					}
+					System.out.println();
+					System.out.println("입력 : ");
+					int idx = scan.nextInt();
+					
+					if(arr[idx]==cnt) {
+						arr[idx] = 9;
+						cnt += 1;
+						j += 1;
+						
+					}
+							
+				}
+				
+				
+				
+		
+
+			}
+		}
+		
 	}
 
 }
