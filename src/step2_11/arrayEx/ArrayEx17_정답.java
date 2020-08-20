@@ -65,10 +65,38 @@ public class ArrayEx17_정답 {
 			}
 			}
 		//가로검사
-		for(int i = 0; i<9; i++) {
+		for(int i = 0; i<9; i+=3) {
+			if(game[i]==1&&game[i+1]==1&& game[i+2]==1) {
+				win = 1;
+			}
+			if(game[i]==2 && game[i+1]==2&&game[i+2]==2) {
+				
+			}
 		}
-		
+		//세로검사
+		for(int i = 0; i<3;) {
+			if(game[i]==1&& game[i+3]==1&& game[i+6]==1) {
+				win = 1;
+			}
+			if(game[i] == 2&& game[i+3]==2&& game[i+6] ==2) {
+				win = 2;
+			}
+		}
+		//대각선검사
+		if(game[0] ==1 && game[4]==1&& game[8] ==1) {
+			win = 1;
+		}
+		if(game[0] ==2&& game[4]==2 && game[8] ==2) {
+			win = 2;
+		}
+		if(game[2]==1 && game[4] ==1&& game[6]==1) {
+			win = 1;
+		}
+		if(game[2]==2 && game[4] == 2&& game[6] ==2) {
+			win = 2;
+		}
 	}
+	
 }
 
 
