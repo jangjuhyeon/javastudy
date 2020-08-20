@@ -7,7 +7,6 @@ public class Ex02 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
-<<<<<<< HEAD
 
 		int arr[] = { 1001, 20, 1002, 45, 1003, 54 };
 		// 학번과 점수가 한쌍이다 1001:20 , 1002:45 , 1003:54
@@ -21,9 +20,8 @@ public class Ex02 {
 				System.out.println("나의 점수는 " + arr[i + 1]);
 
 			}
-=======
 		
-		int arr[] = {1001, 20, 1002, 45, 1003, 54};
+		int arr1[] = {1001, 20, 1002, 45, 1003, 54};
 		// 학번과 점수가 한쌍이다 1001:20 , 1002:45  , 1003:54
 		
 		// 문제1) 학번을 입력하면 점수 출력 
@@ -53,34 +51,23 @@ public class Ex02 {
 			System.out.println("국어+수학 점수 입력 : ");
 			int totJumsu = scan.nextInt();
 			
-			for(int i = 0; i<9; i++) {
-				if(totJumsu == (score[i] + score[i+1])) {
+			for(int i1 = 0; i1<9; i1++) {
+				if(totJumsu == (score[i1] + score[i1+1])) {
 					
-					System.out.println("나의 학번은" + score[i-1] + "입니다" );
+					System.out.println("나의 학번은" + score[i1-1] + "입니다" );
 				}
 			}
 			
 
 
->>>>>>> branch 'master' of https://github.com/jangjuhyeon/javastudy
 		}
-<<<<<<< HEAD
-=======
 		
 			
 			
 			
 		}
 	
->>>>>>> branch 'master' of https://github.com/jangjuhyeon/javastudy
 		// 문제2) 점수를 입력하면 학번 출력
-		System.out.println("점수 입력 : ");
-		int jumsu = scan.nextInt();
-		for (int i = 0; i < 6; i++) {
-			if (arr[i] == jumsu) {
-				System.out.println("나의 학번" + arr[i - 1]);
-
-			}
 		
 		
 		
@@ -88,8 +75,8 @@ public class Ex02 {
 
 	}
 
-}
-}
+
+
 
 // for문으로 찾아서 보내
 
