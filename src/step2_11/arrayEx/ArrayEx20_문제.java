@@ -19,7 +19,7 @@ public class ArrayEx20_문제 {
 		
 		while(isRun) {
 			for(int i = 0; i<5; i++) {
-				System.out.println(arr[i]);
+				System.out.println(arr[i]+ " ");
 			}
 			System.out.println();
 			
@@ -28,15 +28,20 @@ public class ArrayEx20_문제 {
 			System.out.println("메뉴선택 : ");
 			int sel = scan.nextInt();
 			
+			
+			int delIdx = -1;;
+
 			if(sel ==2) {
 				System.out.println("삭제할 값 입력 : ");
 				int data = scan.nextInt();
 				
-				
-				
-				
-						
-						
+				for(int i=0; i<cnt; i++) {
+					delIdx = i;
+				}
+			}
+			
+			if(delIdx == -1) {
+				System.out.println("입력하신 값은 존재하지 않습니다.");
 			}
 		}
 	}
