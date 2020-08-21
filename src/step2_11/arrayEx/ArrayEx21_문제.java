@@ -5,7 +5,6 @@ import java.util.Scanner;
 /*
  * # 배열 컨트롤러[1단계] : 삽입
  */
-
 public class ArrayEx21_문제 {
 
 	public static void main(String[] args) {
@@ -37,21 +36,28 @@ public class ArrayEx21_문제 {
 				
 				System.out.print("삽입할 위치 입력 : ");
 				int idx = scan.nextInt();
-				if(cnt<idx || idx<0) {
-					System.out.println("해당위치에는 삽입할 수 없습니다.");
+					//0-4겠지
+				
+				if(cnt<idx || idx <0) {
+					System.out.println("해당 위치에는 삽입 할 수 없습니다.");
+					continue;
+					//2<3 or 
 				}
 				
-				System.out.print("삽입할 값 입력 : ");
-				int data = scan.nextInt(); 
+				System.out.println("삽입할 값 입력 : ");
+				int data = scan.nextInt();
 				
-				int[] temp = new int[cnt + 1];
+				int [] temp = new int[cnt + 1 ];
 				int tempIndex = 0;
 				
-				for(int i =0; i<cnt+1; i++) {
-					temp[i] = arr[tempIndex];
-					tempIndex += 1;
-					
+				for(int  i =0; i<cnt + 1; i++) {
+					if(idx != i) {
+						temp[i]=arr[tempIndex];
+						tempIndex += 1;
+					}
 				}
+						
+				
 				
 			}
 			
