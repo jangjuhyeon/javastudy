@@ -15,7 +15,7 @@ public class ArrayEx20_문제 {
 		int[] arr = {10,20,30,40,50};
 		int cnt = 5;
 		
-		boolean isRun = true;
+		boolean isRun = true; 
 		
 		while(isRun) {
 			for(int i = 0; i<5; i++) {

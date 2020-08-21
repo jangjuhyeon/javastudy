@@ -42,7 +42,7 @@ public class ArrayEx21_문제 {
 				}
 				
 				System.out.print("삽입할 값 입력 : ");
-				int data = scan.nextInt();
+				int data = scan.nextInt(); 
 				
 				int[] temp = new int[cnt + 1];
 				int tempIndex = 0;

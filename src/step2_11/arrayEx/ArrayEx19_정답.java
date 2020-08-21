@@ -19,7 +19,7 @@ public class ArrayEx19_정답 {
 		boolean run = true;
 		while(run) {
 			for(int i =0; i<cnt; i++) {
-				System.out.println(arr[i] +" ");
+				System.out.println(arr[i] +" "); 
 			}
 			System.out.println();
 			

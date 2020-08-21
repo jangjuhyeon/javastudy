@@ -27,7 +27,7 @@ public class ArrayEx19_문제 {
 			
 			System.out.println("메뉴 선택 : ");
 
-			int sel = scan.nextInt();
+			int sel = scan.nextInt(); 
 			
 			if(sel == 1) {
 				if(cnt == 5) {
